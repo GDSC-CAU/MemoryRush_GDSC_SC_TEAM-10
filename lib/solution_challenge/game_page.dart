@@ -24,7 +24,7 @@ class _GamePageState extends State<GamePage> {
   int _player2Score = 0;
   int _playerTurn = 0;
 
-  List<String> data = List.filled(4, ''); // 더 나은 방법으로 리스트 초기화
+  List<String> data = List.filled(4, '');
   List<String> urls = [
     'http://192.168.0.19',
     'http://192.168.0.174',
@@ -312,48 +312,6 @@ class _GamePageState extends State<GamePage> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      //나중에 주석처리하기
-                      height: constraints.maxHeight * 0.05,
-                    ),
-                    Row(
-                      //나중에 주석처리하기
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          data[0],
-                          style: const TextStyle(
-                              fontSize: 10,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: 'BlackHanSans'),
-                        ),
-                        Text(
-                          data[1],
-                          style: const TextStyle(
-                              fontSize: 10,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: 'BlackHanSans'),
-                        ),
-                        Text(
-                          data[2],
-                          style: const TextStyle(
-                              fontSize: 10,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: 'BlackHanSans'),
-                        ),
-                        Text(
-                          data[3],
-                          style: const TextStyle(
-                              fontSize: 10,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w600,
-                              fontFamily: 'BlackHanSans'),
-                        ),
-                      ],
-                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -378,53 +336,6 @@ class _GamePageState extends State<GamePage> {
                           fontWeight: FontWeight.w800,
                           fontFamily: 'BlackHanSans'),
                     ),
-                    // Text(
-                    //   _gameEnabled ? _wordsSpoken : '게임종료',
-                    //   style: const TextStyle(
-                    //     fontSize: 15,
-                    //     fontWeight: FontWeight.w300,
-                    //   ),
-                    // ),
-                    //Container(),
-                    //Row(
-                    //mainAxisAlignment: MainAxisAlignment.center,
-                    //children: [
-                    // IconButton(
-                    //     onPressed: _changeText,
-                    //     icon: const Icon(Icons.thumb_up)),
-                    // Padding(
-                    //   padding: const EdgeInsets.only(right: 8),
-                    //   child: GestureDetector(
-                    //       onTap: () {
-                    //         Navigator.push(
-                    //             context,
-                    //             MaterialPageRoute(
-                    //                 builder: (context) =>
-                    //                     const TryAgainPage()));
-                    //       },
-                    //       child: const Icon(Icons.thumb_down)),
-                    // ),
-                    // FloatingActionButton(
-                    //   onPressed: _speechToText.isListening
-                    //       ? _stopListening
-                    //       : _startListening,
-                    //   tooltip: 'Listen',
-                    //   backgroundColor: Colors.red,
-                    //   child: Icon(
-                    //     _speechToText.isNotListening
-                    //         ? Icons.mic_off
-                    //         : Icons.mic,
-                    //     color: Colors.white,
-                    //   ),
-                    // ),
-                    // FloatingActionButton(
-                    //   onPressed: _restartGame, // 게임 재시작 버튼
-                    //   tooltip: 'Restart Game',
-                    //   backgroundColor: Colors.blue,
-                    //   child: const Icon(Icons.refresh),
-                    // ),
-                    // ],
-                    //),
                     SizedBox(height: constraints.maxHeight * 0.001)
                   ],
                 )

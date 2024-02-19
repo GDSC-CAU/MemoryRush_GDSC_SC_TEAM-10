@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                  color: const Color.fromARGB(0, 255, 255, 255)
+                                  color: const Color(0x008b956d)
                                       .withOpacity(0.5),
                                   border: Border.all(
                                       color: const Color(0x008b956d)
@@ -50,9 +50,9 @@ class HomeScreen extends StatelessWidget {
                               child: const Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('XXX Game',
+                                  Text('MemoryRush',
                                       style: TextStyle(
-                                          fontSize: 40,
+                                          fontSize: 32,
                                           fontWeight: FontWeight.w900,
                                           fontFamily: 'Gugi')),
                                 ],
@@ -211,9 +211,9 @@ class HomeScreen_play extends StatelessWidget {
                               child: const Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('XXX Game',
+                                  Text('MemoryRush',
                                       style: TextStyle(
-                                          fontSize: 40,
+                                          fontSize: 32,
                                           fontWeight: FontWeight.w900,
                                           fontFamily: 'Gugi'))
                                 ],
